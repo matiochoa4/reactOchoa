@@ -1,13 +1,12 @@
 import './App.css';
 import Navbar from './components/NavBar'
-import Items from './container/ItemListContainer'
+import ItemListContainer from './container/ItemListContainer'
 
 function App() {
   return (
     <>
       <Navbar />
-      <Items titulo="PROYECTO REACTJS"/>
-      <Items titulo="e-Commerce MAJUMA"/>
+      <ItemListContainer titulo="PROYECTO REACTJS"/>
     </>
   );
 }
