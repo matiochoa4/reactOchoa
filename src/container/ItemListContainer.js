@@ -1,37 +1,37 @@
 import React, {useEffect, useState} from 'react';
 import ItemList from './ItemList'
-import fotos1 from '../components/pictures/fotos1.jpg'
+import data from '../data/data'
+import { useParams } from 'react-router-dom';
 
-const ItemListContainer = () => { 
-    const [productList, setProductList] = useState([]);
-    const miLista = [
-       { id: 1, title: "PRODUCTO 1", description: "description", price: 500, pictureUrl:{fotos1} }, 
-       { id: 2, title: "PRODUCTO 2", description: "description", price: 500, pictureUrl:{fotos1} },
-       { id: 3, title: "PRODUCTO 3", description: "description", price: 500, pictureUrl:{fotos1} },
-    ];
+
+const ItemListContainer = (props) => { 
+    const [productos, setProductos] = useState([]);
+    const { catId } = useParams();
+
+    console.log(catId);
+
     const promise = new Promise((resolve, reject) => {
        setTimeout(() => {
-       const productos = 3;
-       if (productos === 0) {
+       const cantidadProd = 3;
+       if (cantidadProd === 0) {
           reject({ err: "No hay nada que mostrar en el listado" });
        } else {
-          resolve(miLista);
+          resolve(data);
        }
     },2000);
     })
     useEffect(() => {
-          promise
-          .then((result) => {
-             console.log(result);
-             setProductList(result);
+          promise.then((res) => {
+            catId ? setProductos(res.filter((i) => i.category === catId)) : setProductos(res);
           })
           .catch((err) => {
              console.log(err);
           });
-       }, []);
+       }, [catId]);
        return (
           <div>
-          <ItemList productList={productList} /> 
+             <h1>{props.title}</h1> 
+             <ItemList productos={productos} /> 
           </div>
     );
  };
