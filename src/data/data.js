@@ -6,7 +6,8 @@ const data = [
         title: 'PRODUCTO 1',
         category: 'Categoria 3',
         description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum harum fugit sapiente dolorum unde odit explicabo, perspiciatis minima sed. Beatae officia nobis excepturi maiores. Amet!',
-        price: '500',
+        price: '350',
+        stock: 25,
         pictureUrl: fotos1
     },
     {
@@ -15,6 +16,7 @@ const data = [
         category: 'Categoria 1',
         description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum harum fugit sapiente dolorum unde odit explicabo, perspiciatis minima sed. Beatae officia nobis excepturi maiores. Amet!',
         price: '500',
+        stock: 15,
         pictureUrl: fotos1
     },
     {
@@ -22,7 +24,8 @@ const data = [
         title: 'PRODUCTO 3',
         category: 'Categoria 2',
         description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum harum fugit sapiente dolorum unde odit explicabo, perspiciatis minima sed. Beatae officia nobis excepturi maiores. Amet!',
-        price: '500',
+        price: '600',
+        stock: 10,
         pictureUrl: fotos1
     }
 ]
