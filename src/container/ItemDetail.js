@@ -3,14 +3,14 @@ import ItemCount from '../components/ItemCount'
 import { Link } from 'react-router-dom';
 import { Context } from '../components/CartContext'
 
-const ItemDetail = ({ id, title, pictureUrl, price, stock, description }) => {
+const ItemDetail = ({ id, title, pictureUrl, price, stock, category, description }) => {
 
   const [compra, setCompra] = useState(false)
   const {onAdd} = useContext(Context)
 
   const agregar = (props) => {
     setCompra(true)
-    onAdd({id, title, price}, props.unidades)
+    onAdd({id, title, price, category, description, pictureUrl}, props.unidades)
     alert(`Se han agregado ${props.unidades} al carrito`)
   }
 

@@ -15,24 +15,31 @@ const Navbar = () => {
                     </Link>
                     <div className='collapse navbar-collapse' id='navbarSupportedContent'>
                         <ul className='navbar-nav me-auto mb-2 mb-lg-0'>
-                            <Link to={`/category/Categoria 1`}>
+                            <Link to={`/category/A`}>
                             <li className='nav-item'>
-                                <p className='nav-link active' aria-current='page'>Categoria 1</p>
+                                <p className='nav-link active' aria-current='page'>Categoria A</p>
                             </li>
                             </Link>
-                            <Link to={`/category/Categoria 2`}>
+                            <Link to={`/category/B`}>
                             <li className='nav-item'>
-                                <p className='nav-link active' aria-current='page'>Categoria 2</p>
+                                <p className='nav-link active' aria-current='page'>Categoria B</p>
                             </li>
                             </Link>
-                            <Link to={`/category/Categoria 3`}>
+                            <Link to={`/category/C`}>
                             <li className='nav-item'>
-                                <p className='nav-link active' aria-current='page'>Categoria 3</p>
+                                <p className='nav-link active' aria-current='page'>Categoria C</p>
                             </li>
                             </Link>                            
+                            <Link to={`/category/D`}>
+                            <li className='nav-item'>
+                                <p className='nav-link active' aria-current='page'>Categoria D</p>
+                            </li>
+                            </Link>
+                            <Link to={`/cart`}>                            
                             <li className='nav-item'>
                                 <p className='nav-link active' aria-current='page'><CartWidget /></p>
                             </li>
+                            </Link>
                         </ul>
                     </div>
                 </div>

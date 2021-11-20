@@ -27,6 +27,51 @@ const data = [
         price: '600',
         stock: 10,
         pictureUrl: fotos1
+    },
+    {
+        id: '4',
+        title: 'PRODUCTO 4',
+        category: 'Categoria 1',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum harum fugit sapiente dolorum unde odit explicabo, perspiciatis minima sed. Beatae officia nobis excepturi maiores. Amet!',
+        price: '600',
+        stock: 10,
+        pictureUrl: fotos1
+    },
+    {
+        id: '5',
+        title: 'PRODUCTO 5',
+        category: 'Categoria 2',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum harum fugit sapiente dolorum unde odit explicabo, perspiciatis minima sed. Beatae officia nobis excepturi maiores. Amet!',
+        price: '600',
+        stock: 10,
+        pictureUrl: fotos1
+    },
+    {
+        id: '6',
+        title: 'PRODUCTO 6',
+        category: 'Categoria 3',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum harum fugit sapiente dolorum unde odit explicabo, perspiciatis minima sed. Beatae officia nobis excepturi maiores. Amet!',
+        price: '600',
+        stock: 10,
+        pictureUrl: fotos1
+    },
+    {
+        id: '7',
+        title: 'PRODUCTO 7',
+        category: 'Categoria 1',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum harum fugit sapiente dolorum unde odit explicabo, perspiciatis minima sed. Beatae officia nobis excepturi maiores. Amet!',
+        price: '600',
+        stock: 10,
+        pictureUrl: fotos1
+    },
+    {
+        id: '8',
+        title: 'PRODUCTO 8',
+        category: 'Categoria 3',
+        description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum harum fugit sapiente dolorum unde odit explicabo, perspiciatis minima sed. Beatae officia nobis excepturi maiores. Amet!',
+        price: '600',
+        stock: 10,
+        pictureUrl: fotos1
     }
 ]
 
